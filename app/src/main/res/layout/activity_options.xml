@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Options">
+
+    <Button
+        android:id="@+id/simInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Sim Info"
+        app:layout_constraintBottom_toTopOf="@+id/signalInfo"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <Button
+        android:id="@+id/signalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Signal Info"
+        app:layout_constraintBottom_toTopOf="@+id/baseInfo"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <Button
+        android:id="@+id/baseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:text="Base Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="179dp" />
+</android.support.constraint.ConstraintLayout>
