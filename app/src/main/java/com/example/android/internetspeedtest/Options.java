@@ -17,7 +17,7 @@ public class Options extends AppCompatActivity {
         signalinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                siminfoPage();
+                signalinfoPage();
             }
         });
         siminfo = (Button) findViewById(R.id.simInfo);
@@ -27,20 +27,27 @@ public class Options extends AppCompatActivity {
                 siminfoPage();
             }
         });
+        baseinfo = (Button) findViewById(R.id.baseInfo);
+        baseinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                baseinfoPage();
+            }
+        });
     }
-    public void siminfoPage(){
+    public void signalinfoPage(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         //overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
     }
 
-    public void siminfopage(){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void siminfoPage(){
+        Intent intent = new Intent(this, SimInfo.class);
         startActivity(intent);
 
     }
-    public void baseinfopage(){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void baseinfoPage(){
+        Intent intent = new Intent(this, BaseInfo.class);
         startActivity(intent);
 
     }
